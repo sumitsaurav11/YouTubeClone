@@ -1,0 +1,299 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0px 2rem; */
+    position: sticky;
+    top: 0rem;
+    /* width: 80%; */
+    padding: 1rem 2rem;
+    background-color:white;
+    z-index: 5;
+    border: 1px solid red;
+}
+
+.profile img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon-container img{
+    width:2rem;
+    height: 2rem;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    /* flex-grow: 1; */
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 2.25rem;
+    border-radius: 17px;
+    box-shadow: 0px 0px 2px grey;
+    
+}
+.search-container input{
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.search-container button{
+    height: 100%;
+    border: none;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    width: fit-content;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    /* margin-top: .75rem; */
+}
+  
+.menu-container {
+    position: fixed;
+    top: 4.25rem;
+    left: 0;
+    bottom: 0;
+    width: 15%; /* Adjust the width as needed */
+    height: 100vh; /* Adjust the height as needed */
+    background-color: white; /* Adjust the background color as needed */
+    overflow-y: auto; /* Enable vertical scrolling within the menu */
+}
+/* .menu-container::-webkit-scrollbar {
+    background-color: transparent;
+} */
+.content-container{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .video-card img{
+    width:100%;
+    height: 14vw;
+    border-radius: 1rem;
+}
+.video-card:hover img{
+    border-radius: 0px;
+    cursor: pointer;
+} */
+.statistics{
+    display: flex;
+    gap: .5rem;
+}
+.video-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 27%;
+    gap: 1rem;
+    height: 50vh;
+}
+.content{
+    padding-top: 6rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 4.25rem;
+    gap: 3rem;
+    width: 100%;
+    overflow-x:scroll;
+    background-color: white;
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+/* .button-container::-webkit-scrollbar {
+    background-color: transparent;
+  } */
+ .chip{
+    white-space: nowrap;
+    background-color:whitesmoke;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.chip:hover{
+    background-color:rgb(225, 219, 219);
+}
+.video-carddd{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* border: 1px solid red; */
+    width: 27%;
+    gap: 1rem;
+    height: 50vh;
+}
+.thumbnil-container{
+    width: 100%;
+    height: 55%;
+    border-radius: 15px;
+}
+.thumbnil{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.iframe{
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.video-carddd:hover .thumbnil-container{
+    border-radius: 0px;
+}
+.about-video{
+    display: flex;
+    gap: .5rem;
+    /* border: 1px solid green; */
+    height: 28%;
+}
+.about-video .logo{
+    width: 2.25rem;
+    border-radius: 50%;
+    height: 2.25rem;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: space-between;
+}
+.statisticssss{
+    display: flex;
+    gap: 1rem;
+    /* align-self: flex-end; */
+}
+.all{
+    background-color: black;
+    color: white;
+}
+/*
+"kind": "youtube#videoListResponse",
+    "etag": "7KgFZdxEuDG1WaWshJVTSJ4eDCo",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "WuO-8X_0I1xgKW47aA5K4uKqzJQ",
+            "id": "14yBVbju8Ds",
+            "snippet": {
+                "publishedAt": "2021-03-24T07:30:46Z",
+                "channelId": "UCplek_r865mf1ECCE6Dy0HQ",
+                "title": "महाराणा प्रताप पर रोंगटे खड़े कर देगी ये कविता | Ashok Charan I Kavi Sammelan 2021",
+                "description": "महाराणा प्रताप पर रोंगटे खड़े कर देगी ये कविता | Ashok Charan I Kavi Sammelan 2021\nभारतीय इतिहास में महाराणा प्रताप और शक्ति सिंह के मध्य हुए युद्ध और अंत में भाइयों के प्रेमपूर्वक मिलन की कथा जनमानस के लिए प्रेरणादायी है। इसी प्रसंग को अपनी कविता के माध्यम से आप सबके साथ साझा कर रहा हूँ, कविता आप तक पहुँचे तो आशीष दीजिएगा।\n\n#AshokCharan #HindiPoetry #LatestKaviSammelan\n\nअशोक चारण वर्तमान पीढ़ी के वीर रस के सर्वाधिक लोकप्रिय और व्यस्त कवि हैं ।\nकविताओं की वैचारिक परिपक्वता और साम्प्रदायिक सद्भावना उन्हें सर्व स्वीकार्य भी बनाती है।\nअलग विषयों पर कविता लिखने की आदत अशोक चारण को भीड़ से अलग दिखाती है ।\n प्रभावी आवाज , आदायगी , त्वरित हास्य बोध ,इनकी प्रस्तुति को सरस और मनोरंजनपूर्ण बनाता है ।\nसामान्य से ले कर बौद्धिक वर्ग तक इनके प्रशंसक समान रूप बढ़ते जा रहे हैं।\n\nDigital Partner-Digital Khidki\n\n#AshokCharan #LatestPoetry #KaviSammelan",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/14yBVbju8Ds/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/14yBVbju8Ds/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/14yBVbju8Ds/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/14yBVbju8Ds/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/14yBVbju8Ds/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Kavi Ashok Charan",
+                "tags": [
+                    "Ashok charan",
+                    "latest kavi sammelan",
+                    "kavi sammelan",
+                    "kavi sammelan & mushaira",
+                    "kavi Sammelan 2020",
+                    "kavi sammelan 2019",
+                    "veer ras kavi sammelan",
+                    "veer shaheed poetry",
+                    "latest poetry",
+                    "hindi poetry",
+                    "hindustan",
+                    "hindustan poetry",
+                    "poetry on india",
+                    "kavi yudh",
+                    "vijay diwas poetry",
+                    "oj poetry",
+                    "veer ras",
+                    "veer ras poetry",
+                    "patriotic poetry",
+                    "patriotic",
+                    "desh bhakti",
+                    "oj",
+                    "oj kavita",
+                    "hindi kavita",
+                    "kavi sammelan 2020",
+                    "kavi ashok charan",
+                    "kavi",
+                    "jaipur",
+                    "ajmer"
+                ],
+                "categoryId": "24",
+                "liveBroadcastContent": "none",
+                "localized": {
+                    "title": "महाराणा प्रताप पर रोंगटे खड़े कर देगी ये कविता | Ashok Charan I Kavi Sammelan 2021",
+                    "description": "महाराणा प्रताप पर रोंगटे खड़े कर देगी ये कविता | Ashok Charan I Kavi Sammelan 2021\nभारतीय इतिहास में महाराणा प्रताप और शक्ति सिंह के मध्य हुए युद्ध और अंत में भाइयों के प्रेमपूर्वक मिलन की कथा जनमानस के लिए प्रेरणादायी है। इसी प्रसंग को अपनी कविता के माध्यम से आप सबके साथ साझा कर रहा हूँ, कविता आप तक पहुँचे तो आशीष दीजिएगा।\n\n#AshokCharan #HindiPoetry #LatestKaviSammelan\n\nअशोक चारण वर्तमान पीढ़ी के वीर रस के सर्वाधिक लोकप्रिय और व्यस्त कवि हैं ।\nकविताओं की वैचारिक परिपक्वता और साम्प्रदायिक सद्भावना उन्हें सर्व स्वीकार्य भी बनाती है।\nअलग विषयों पर कविता लिखने की आदत अशोक चारण को भीड़ से अलग दिखाती है ।\n प्रभावी आवाज , आदायगी , त्वरित हास्य बोध ,इनकी प्रस्तुति को सरस और मनोरंजनपूर्ण बनाता है ।\nसामान्य से ले कर बौद्धिक वर्ग तक इनके प्रशंसक समान रूप बढ़ते जा रहे हैं।\n\nDigital Partner-Digital Khidki\n\n#AshokCharan #LatestPoetry #KaviSammelan"
+                }
+            },
+            "statistics": {
+                "viewCount": "574435",
+                "likeCount": "25384",
+                "favoriteCount": "0",
+                "commentCount": "610"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
+    }
+}
+*/

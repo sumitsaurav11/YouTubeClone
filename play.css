@@ -1,0 +1,29 @@
+.container{
+   display: flex;
+   justify-content: center;
+   gap: 1%;
+}
+.playing-video{
+    width: 70%;
+    height: 70vh;
+    /* border:1px solid red; */
+}
+.sugestion-video{
+    width: 27%;
+    /* border:1px solid red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.video-card{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    gap: 1%;
+}
+.video-card img{
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+}
